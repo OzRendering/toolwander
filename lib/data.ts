@@ -94,6 +94,6 @@ const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").repla
 export const tools: Tool[] = rows.map(([name, url, category, pricing, description, bestFor, isNew]) => ({
   slug: slugify(name), name, url, category, pricing, description, bestFor, isNew: !!isNew, added: isNew ? "2026-10-12" : "2026-10-01",
 }));
-export const SITE = { name: "UseWhich", url: "https://usewhich-oz-dot-flow.vercel.app", tagline: "Which AI tool to use for which job." };
+export const SITE = { name: "UseWhich", url: "https://usewhich-ten.vercel.app", tagline: "Which AI tool to use for which job." };
 // Paid featured slots go here (slugs). Empty until a sponsor pays.
 export const featuredSlugs: string[] = [];
