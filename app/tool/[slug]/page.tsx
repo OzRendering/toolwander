@@ -1,4 +1,4 @@
-import Link from "next/link"; import { notFound } from "next/navigation"; import ToolCard from "@/components/ToolCard"; import { tools, categories, SITE } from "@/lib/data";
+import Link from "next/link"; import { notFound } from "next/navigation"; import ToolCard from "@/components/ToolCard"; import FeatureCTA from "@/components/FeatureCTA"; import { tools, categories, SITE } from "@/lib/data";
 export function generateStaticParams() { return tools.map(t => ({ slug: t.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const t = tools.find(x => x.slug === slug); if (!t) return {};
   return { title: `${t.name}: best for ${t.bestFor.toLowerCase()}`, description: `${t.name} — ${t.description} Best for: ${t.bestFor}. Pricing: ${t.pricing}.`, alternates: { canonical: `/tool/${t.slug}` } }; }
@@ -12,5 +12,6 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
     <div className="box"><h1 style={{ marginTop: 0 }}>{t.name}</h1><p style={{ fontSize: 18 }}>{t.description}</p>
       <p><b>Use it for:</b> {t.bestFor}</p><p><span className="tag">{c.name}</span><span className="tag">{t.pricing}</span>{t.isNew && <span className="tag new">New this week</span>}</p>
       <a className="btn" href={t.url} target="_blank" rel="noopener">Visit {t.name} ↗</a></div>
+    <FeatureCTA context={c.name.toLowerCase()} />
     <h2>Alternatives in {c.name}</h2><div className="grid">{tools.filter(x => x.category === t.category && x.slug !== t.slug).slice(0, 6).map(x => <ToolCard key={x.slug} t={x} />)}</div></>);
 }
