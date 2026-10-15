@@ -1,0 +1,20 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#111;background:#fafafa;line-height:1.5}
+a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid #eee}header .wrap{display:flex;gap:18px;align-items:center;height:60px;flex-wrap:wrap}
+header nav{display:flex;gap:16px;margin-left:auto;font-size:14px}header nav a{text-decoration:none;color:#444}
+.logo{font-weight:800;font-size:20px;text-decoration:none}.logo span{color:#5b5bf7}
+.hero{padding:48px 0 24px}.hero h1{font-size:40px;margin:0 0 8px;letter-spacing:-.02em}.hero p{color:#555;font-size:18px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:16px 0 32px}
+.card{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:16px;text-decoration:none;display:block}.card:hover{border-color:#5b5bf7}
+.card h3{margin:0 0 4px;font-size:17px}.card p{margin:0 0 8px;color:#555;font-size:14px}
+.tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:99px;background:#f0f0ff;color:#4545c9;margin-right:6px}
+.tag.new{background:#e6f9ee;color:#137a3c}.tag.feat{background:#fff4d6;color:#8a6100}
+.best{font-size:13px;color:#333}.cats{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+.cats a{padding:6px 12px;border:1px solid #ddd;border-radius:99px;background:#fff;text-decoration:none;font-size:14px}
+h2{margin:32px 0 4px}.btn{display:inline-block;background:#5b5bf7;color:#fff;border:0;padding:10px 18px;border-radius:8px;font-size:15px;text-decoration:none;cursor:pointer}
+.btn[disabled]{background:#aaa;cursor:not-allowed}input,textarea,select{width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;font:inherit;margin:4px 0 12px}
+form.inline{display:flex;gap:8px;max-width:460px}form.inline input{margin:0}
+.box{background:#fff;border:1px solid #eaeaea;border-radius:12px;padding:24px;margin:24px 0}
+.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.price .box{margin:0}.price b{font-size:32px}
+footer{border-top:1px solid #eee;padding:24px 0;color:#777;font-size:14px;margin-top:40px}.muted{color:#777;font-size:14px}
+.featured-slot{border:1px dashed #d9b84a;background:#fffbea}
