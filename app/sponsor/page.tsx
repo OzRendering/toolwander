@@ -1,4 +1,4 @@
-export const metadata = { title: "Sponsor / Get featured", description: "Feature your AI tool at the top of the UseWhich directory or sponsor the weekly AI tools newsletter. Pricing from $49.", alternates: { canonical: "/sponsor" } };
+export const metadata = { title: "Sponsor / Get featured", description: "Feature your AI tool at the top of the ToolWander directory or sponsor the weekly AI tools newsletter. Pricing from $49.", alternates: { canonical: "/sponsor" } };
 const plans = [
   { name: "Featured listing — 1 week", price: "$49", desc: "Pinned in the Featured row at the top of the homepage and your category page, with a Featured badge." },
   { name: "Newsletter sponsor slot", price: "$99", desc: "Top-of-email sponsor placement in one issue of the weekly AI tools newsletter (logo, 50-word blurb, link)." },

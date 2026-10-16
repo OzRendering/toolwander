@@ -1,7 +1,7 @@
-export const metadata = { title: "Privacy Policy", description: "How UseWhich handles newsletter signups, tool submissions and site data.", alternates: { canonical: "/privacy" } };
+export const metadata = { title: "Privacy Policy", description: "How ToolWander handles newsletter signups, tool submissions and site data.", alternates: { canonical: "/privacy" } };
 export default function Privacy() { return (<div className="box"><h1 style={{ marginTop: 0 }}>Privacy Policy</h1><p className="muted">Last updated: October 15, 2026</p>
   <h3>What we collect</h3><ul>
-    <li><b>Newsletter signup:</b> your email address, used only to send the UseWhich newsletter.</li>
+    <li><b>Newsletter signup:</b> your email address, used only to send the ToolWander newsletter.</li>
     <li><b>Tool submissions:</b> the details you enter (tool name, URL, category, pricing, description, best-for, and a contact email), used to review the listing and follow up about it.</li>
     <li><b>Hosting logs:</b> our host, Vercel, processes standard request data (such as IP address and browser type) to serve and protect the site.</li></ul>
   <h3>What we don't do</h3><ul><li>We don't sell or rent your personal information.</li><li>We don't use advertising trackers or third-party analytics cookies.</li>
