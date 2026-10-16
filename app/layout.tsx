@@ -2,7 +2,8 @@ import "./globals.css"; import Link from "next/link"; import type { Metadata } f
 export const metadata: Metadata = { metadataBase: new URL(SITE.url), title: { default: `${SITE.name} — Find the right AI tool for the job`, template: `%s | ${SITE.name}` },
   description: "A curated directory of AI tools and AI agent use cases: see which tool is best for each job, plus new AI tool releases every week.",
   openGraph: { siteName: SITE.name, type: "website" }, twitter: { card: "summary_large_image" },
-  alternates: { canonical: "/", types: { "application/rss+xml": "/rss.xml" } } };
+  alternates: { canonical: "/", types: { "application/rss+xml": "/rss.xml" } },
+  verification: { google: "u2Y0vqBdpaymGyOArnmsU1QaNOlgiscOnseGeM93M8w" } };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (<html lang="en"><body>
     <header><div className="wrap"><Link href="/" className="logo">Tool<span>Wander</span></Link>
