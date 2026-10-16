@@ -8,6 +8,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <header><div className="wrap"><Link href="/" className="logo">Tool<span>Wander</span></Link>
       <nav><Link href="/new">New this week</Link><Link href="/category/agents">Agents</Link><Link href="/submit">Submit a tool</Link><Link href="/sponsor">Sponsor / Get featured</Link></nav></div></header>
     <main className="wrap">{children}</main>
-    <footer><div className="wrap">© 2026 {SITE.name} · {SITE.tagline} · <Link href="/sponsor">Advertise</Link> · <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link> · <a href="/rss.xml">RSS</a> · <Link href="/llms.txt">llms.txt</Link></div></footer>
+    <footer><div className="wrap">© 2026 {SITE.name} · {SITE.tagline} · <Link href="/newsletter">Newsletter</Link> · <Link href="/sponsor">Advertise</Link> · <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link> · <a href="/rss.xml">RSS</a> · <Link href="/llms.txt">llms.txt</Link></div></footer>
   </body></html>);
 }
